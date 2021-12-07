@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
-  </category>
-  
-  <category>
-      <pattern>hi</pattern>
-      <template>
-          <random>
-          <li>hola</li>
-          <li>annyung</li>
-          <li>namaste</li>
-          </random>
-      </template>
-  </category>
-  
-  <category>
-      <pattern>replydemo</pattern>
-      <template>
-          <reply>
-              <text>reply1</text>
-                <postback>reply2</postback>
-          </reply>
-      </template>
-  </category>
+<category>
+	    <pattern>greeting</pattern>
+	    <template>
+	        Hello! Welcome to CS Career Quiz Bot.
+	        Are you ready to find out your path?
+	        <button>
+	            <text>Let's gp!</text>
+	            <postback>quiz</postback>
+            </button>
+	    </template>
+    </category>
+    
 </aiml>
