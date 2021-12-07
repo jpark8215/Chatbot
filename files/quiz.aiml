@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<category>
+    <pattern>quiz</pattern>
+    <template>
+        You will be asked a series of questions about your personal preferences
+        and strengths, so we can determine a career that best suits you!
+        Are you ready?
+        
+        <button>
+            <text>Yes!</text>
+            <postback>yes</postback>
+        </button>
+        
+        <button>
+            <text>No.</text>
+            <postback>udc</postback>
+        </button>
+        
+        </template>
+</category>
+
+
+<category>
+    <pattern>yes</pattern>
+    <template>
+        
+        Do you enjoy writing codes?
+        
+        <button>
+            <text>Yes!</text>
+            <postback>yescode</postback>
+        </button>
+        
+        <button>
+            <text>No.</text>
+            <postback>nocode</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>yescode</pattern>
+    <template>
+        
+        Which of two below best explains your strengths?
+        
+        <button>
+            <text>Meticulous</text>
+            <postback>meticulous</postback>
+        </button>
+        
+        <button>
+            <text>Creative</text>
+            <postback>creative</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>creative</pattern>
+    <template>
+        
+        Which would you prefer to do?
+        
+        <button>
+            <text>Software design</text>
+            <postback>software</postback>
+        </button>
+        
+        <button>
+            <text>Game design</text>
+            <postback>game</postback>
+        </button>
+    </template>
+</category>
+
+
+<category>
+    <pattern>software</pattern>
+    <template>
+        
+        You should become a 
+        <link>
+            <text>Software Developer!</text>
+            <url>https://www.computerscience.org/careers/software-developer/</url>
+        </link>
+        
+        <button>
+            <text>Take quiz again</text>
+            <postback>yes</postback>
+        </button>
+        
+        <button>
+            <text>Return to main menu</text>
+            <postback>udc</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>game</pattern>
+    <template>
+        
+        You should become a 
+        <link>
+            <text>Video Game Designer!</text>
+            <url>https://www.computerscience.org/careers/video-game-designer/</url>
+        </link>
+        
+        <button>
+            <text>Take quiz again</text>
+            <postback>yes</postback>
+        </button>
+        
+        <button>
+            <text>Return to main menu</text>
+            <postback>udc</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+<category>
+    <pattern>meticulous</pattern>
+    <template>
+        
+        You should become a 
+        <link>
+            <text>Data Scientist!</text>
+            <url>https://www.computerscience.org/careers/data-science/</url>
+        </link>
+        
+        <button>
+            <text>Take quiz again</text>
+            <postback>yes</postback>
+        </button>
+        
+        <button>
+            <text>Return to main menu</text>
+            <postback>udc</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>nocode</pattern>
+    <template>
+        
+        Which of two below best explains your strengths?
+        
+        <button>
+            <text>Conscientious</text>
+            <postback>conscientious</postback>
+        </button>
+        
+        <button>
+            <text>Collaborative</text>
+            <postback>collaborative</postback>
+        </button>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>conscientious</pattern>
+    <template>
+        
+        Which would you prefer to work with?
+        
+        <button>
+            <text>Database</text>
+            <postback>database</postback>
+        </button>
+        
+        <button>
+            <text>Network</text>
+            <postback>network</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>database</pattern>
+    <template>
+        
+        You should become a 
+        <link>
+            <text>Database Administrator!</text>
+            <url>https://www.computerscience.org/careers/database-administrator/</url>
+        </link>
+        
+        <button>
+            <text>Take quiz again</text>
+            <postback>yes</postback>
+        </button>
+        
+        <button>
+            <text>Return to main menu</text>
+            <postback>udc</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>network</pattern>
+    <template>
+        
+        You should become a 
+        <link>
+            <text>Network Administrator!</text>
+            <url>https://www.computerscience.org/careers/network-administrator/</url>
+        </link>
+        
+        <button>
+            <text>Take quiz again</text>
+            <postback>yes</postback>
+        </button>
+        
+        <button>
+            <text>Return to main menu</text>
+            <postback>udc</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>collaborative</pattern>
+    <template>
+        
+        Would you prefer to work with database or computer hardware/software?
+        
+        <button>
+            <text>Database</text>
+            <postback>database</postback>
+        </button>
+        
+        <button>
+            <text>Computer Hardware/Software</text>
+            <postback>sysmanager</postback>
+        </button>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>sysmanager</pattern>
+    <template>
+        
+        You should become a 
+        <link>
+            <text>System Manager!</text>
+            <url>https://www.computerscience.org/careers/systems-manager/</url>
+        </link>
+        
+        <button>
+            <text>Take quiz again</text>
+            <postback>yes</postback>
+        </button>
+        
+        <button>
+            <text>Return to main menu</text>
+            <postback>udc</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+</aiml>
