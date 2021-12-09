@@ -6,7 +6,7 @@
 	        Hello! Welcome to CS Career Quiz Bot.
 	        Are you ready to find out your path?
 	        <button>
-	            <text>Let's gp!</text>
+	            <text>Let's go!</text>
 	            <postback>quiz</postback>
             </button>
 	    </template>
