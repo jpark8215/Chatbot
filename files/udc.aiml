@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+    
+
 <category>
-	    <pattern>greeting</pattern>
+	    <pattern>*</pattern>
 	    <template>
-	        Hello! Welcome to CS Career Quiz Bot.
+	        Hello! Welcome to CS Career Quiz Bot. \n
 	        Are you ready to find out your path?
 	        <button>
 	            <text>Let's go!</text>
