@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+	<pattern>help</pattern>    
+
+	<template>
+        How can I further assist you?
+        
+    <button>
+        <text>Tell me about my other options</text>
+        <postback>options</postback>
+    </button>
+        
+    <button>
+        <text>I want to talk to a career advisor</text>
+        <postback>adviosor</postback>
+    </button>
+     
+    </template>
+</category>
+
+
+<category>
+    <pattern>options</pattern>
+    <template>
+        Here are some other career options you mihgt be interested in. 
+        
+        <button>
+            <text>Information Research Scientists</text>
+            <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm</url>
+        </button>
+        
+        <button>
+            <text>Information Security Analysts</text>
+            <url>https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm</url>
+        </button>
+
+        <button>
+            <text>Computer Support Specialists</text>
+            <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm</url>
+        </button>
+
+        <button>
+            <text>Computer Systems Analysts</text>
+            <url>https://www.bls.gov/ooh/computer-and-information-technology/computer-systems-analysts.htm</url>
+        </button>
+ 
+        <button>
+            <text>Web Developers</text>
+            <url>https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm</url>
+        </button>
+ 
+        
+        </template>
+</category>
+
+
+<category>
+    <pattern>advisor</pattern>
+    <template>
+        Please enter your name, email address, and a phone number below.
+        A career advisor will reach out to you within 24 hours.
+        
+        
+    </template>
+</category>
+
+</aiml>

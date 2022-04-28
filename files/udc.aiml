@@ -5,10 +5,11 @@
 <category>
 	    <pattern>*</pattern>
 	    <template>
-	        Hello! Welcome to CS Career Quiz Bot. \n
-	        Are you ready to find out your path?
+	        <br>Hello! Welcome to CS Career Quiz Bot.</br>
+	        <br>We are here to help you find out what CS career might suit you best.</br>
+	        <br>Are you ready to find out your path?</br>
 	        <button>
-	            <text>Let's go!</text>
+	            <text>Yes, Let's go!</text>
 	            <postback>quiz</postback>
             </button>
 	    </template>

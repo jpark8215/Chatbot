@@ -4,28 +4,27 @@
 <category>
     <pattern>quiz</pattern>
     <template>
-        You will be asked a series of questions about your personal preferences
-        and strengths, so we can determine a career that best suits you!
+        You will be asked a couple of questions about your personal preferences
+        and strengths, so we can determine a CS career that best suits you!
         Are you ready?
         
         <button>
-            <text>Yes!</text>
-            <postback>yes</postback>
+            <text>Yes! Ask me questions.</text>
+            <postback>yesquestion</postback>
         </button>
         
         <button>
-            <text>No.</text>
+            <text>No. Send me back to main page.</text>
             <postback>udc</postback>
         </button>
         
-        </template>
+    </template>
 </category>
 
 
 <category>
-    <pattern>yes</pattern>
+    <pattern>yesquestion</pattern>
     <template>
-        
         Do you enjoy writing codes?
         
         <button>
@@ -46,7 +45,6 @@
 <category>
     <pattern>yescode</pattern>
     <template>
-        
         Which of two below best explains your strengths?
         
         <button>
@@ -67,16 +65,15 @@
 <category>
     <pattern>creative</pattern>
     <template>
-        
         Which would you prefer to do?
         
         <button>
-            <text>Software design</text>
+            <text>Create specification of software artifact</text>
             <postback>software</postback>
         </button>
         
         <button>
-            <text>Game design</text>
+            <text>Apply design and aesthetics to create game</text>
             <postback>game</postback>
         </button>
     </template>
@@ -86,7 +83,6 @@
 <category>
     <pattern>software</pattern>
     <template>
-        
         You should become a 
         <link>
             <text>Software Developer!</text>
@@ -95,12 +91,17 @@
         
         <button>
             <text>Take quiz again</text>
-            <postback>yes</postback>
+            <postback>yesquestion</postback>
         </button>
         
         <button>
             <text>Return to main menu</text>
             <postback>udc</postback>
+        </button>
+        
+        <button>
+            <text>I need more help</text>
+            <postback>help</postback>
         </button>
         
     </template>
@@ -111,7 +112,6 @@
 <category>
     <pattern>game</pattern>
     <template>
-        
         You should become a 
         <link>
             <text>Video Game Designer!</text>
@@ -120,12 +120,17 @@
         
         <button>
             <text>Take quiz again</text>
-            <postback>yes</postback>
+            <postback>yesquestion</postback>
         </button>
         
         <button>
             <text>Return to main menu</text>
             <postback>udc</postback>
+        </button>
+        
+        <button>
+            <text>I need more help</text>
+            <postback>help</postback>
         </button>
         
     </template>
@@ -135,7 +140,6 @@
 <category>
     <pattern>meticulous</pattern>
     <template>
-        
         You should become a 
         <link>
             <text>Data Scientist!</text>
@@ -144,12 +148,17 @@
         
         <button>
             <text>Take quiz again</text>
-            <postback>yes</postback>
+            <postback>yesquestion</postback>
         </button>
         
         <button>
             <text>Return to main menu</text>
             <postback>udc</postback>
+        </button>
+                
+        <button>
+            <text>I need more help</text>
+            <postback>help</postback>
         </button>
         
     </template>
@@ -160,7 +169,6 @@
 <category>
     <pattern>nocode</pattern>
     <template>
-        
         Which of two below best explains your strengths?
         
         <button>
@@ -180,16 +188,15 @@
 <category>
     <pattern>conscientious</pattern>
     <template>
-        
         Which would you prefer to work with?
         
         <button>
-            <text>Database</text>
+            <text>Organized collection of structured information or data</text>
             <postback>database</postback>
         </button>
         
         <button>
-            <text>Network</text>
+            <text>Series of interconnected nodes to share resources</text>
             <postback>network</postback>
         </button>
         
@@ -201,7 +208,6 @@
 <category>
     <pattern>database</pattern>
     <template>
-        
         You should become a 
         <link>
             <text>Database Administrator!</text>
@@ -210,12 +216,17 @@
         
         <button>
             <text>Take quiz again</text>
-            <postback>yes</postback>
+            <postback>yesquestion</postback>
         </button>
         
         <button>
             <text>Return to main menu</text>
             <postback>udc</postback>
+        </button>
+                
+        <button>
+            <text>I need more help</text>
+            <postback>help</postback>
         </button>
         
     </template>
@@ -226,7 +237,6 @@
 <category>
     <pattern>network</pattern>
     <template>
-        
         You should become a 
         <link>
             <text>Network Administrator!</text>
@@ -235,14 +245,18 @@
         
         <button>
             <text>Take quiz again</text>
-            <postback>yes</postback>
+            <postback>yesquestion</postback>
         </button>
         
         <button>
             <text>Return to main menu</text>
             <postback>udc</postback>
         </button>
-        
+                
+        <button>
+            <text>I need more help</text>
+            <postback>help</postback>
+        </button>
     </template>
 </category>
 
@@ -251,7 +265,6 @@
 <category>
     <pattern>collaborative</pattern>
     <template>
-        
         Would you prefer to work with database or computer hardware/software?
         
         <button>
@@ -271,7 +284,6 @@
 <category>
     <pattern>sysmanager</pattern>
     <template>
-        
         You should become a 
         <link>
             <text>System Manager!</text>
@@ -280,14 +292,18 @@
         
         <button>
             <text>Take quiz again</text>
-            <postback>yes</postback>
+            <postback>yesquestion</postback>
         </button>
         
         <button>
             <text>Return to main menu</text>
             <postback>udc</postback>
         </button>
-        
+
+        <button>
+            <text>I need more help</text>
+            <postback>help</postback>
+        </button>
     </template>
 </category>
 
