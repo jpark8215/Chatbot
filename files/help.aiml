@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+    
 
 <category>
 	<pattern>help</pattern>    
@@ -14,7 +15,7 @@
         
     <button>
         <text>I want to talk to a career advisor</text>
-        <postback>adviosor</postback>
+        <postback>advisor</postback>
     </button>
      
     </template>
@@ -51,6 +52,10 @@
             <url>https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm</url>
         </button>
  
+        <reply>
+            <text>Return to main menu</text>
+            <postback>udc</postback>
+        </reply>
         
         </template>
 </category>
@@ -59,9 +64,17 @@
 <category>
     <pattern>advisor</pattern>
     <template>
-        Please enter your name, email address, and a phone number below.
-        A career advisor will reach out to you within 24 hours.
+        Please type your name and email address below.
         
+        <condition name="name">
+            <li value="unknown"> Your advisor will contact you within 24 hours. Thank you!</li>
+            <li><get name="name" />, Your advisor will contact you within 24 hours. Thank you!</li>
+        </condition>
+        
+        <reply>
+            <text>Return to main menu</text>
+            <postback>udc</postback>
+        </reply>
         
     </template>
 </category>
