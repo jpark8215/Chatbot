@@ -5,9 +5,8 @@
 <category>
 	    <pattern>*</pattern>
 	    <template>
-	        Hello! Welcome to CS Career Quiz Bot.
-	        We are here to help you find out what CS career might suit you best.
-	        Are you ready to find out your path?
+	        Hello! I am WGU CS Career Quiz Bot.
+	        Would you like me to continue?
 	        <button>
 	            <text>Yes, Let's go!</text>
 	            <postback>quiz</postback>

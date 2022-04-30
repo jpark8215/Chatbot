@@ -14,11 +14,55 @@
         </button>
         
         <button>
-            <text>No. Send me back to main page.</text>
-            <postback>udc</postback>
+            <text>No. Just show me the list you have.</text>
+            <postback>list</postback>
         </button>
         
     </template>
+</category>
+
+
+<category>
+    <pattern>list</pattern>
+    <template>
+        Here are some other career options you mihgt be interested in. 
+        
+        <button>
+            <text>Software Developer</text>
+            <url>https://www.computerscience.org/careers/software-developer/</url>
+        </button>
+        
+        <button>
+            <text>Video Game Designer</text>
+            <url>https://www.computerscience.org/careers/video-game-designer/</url>
+        </button>
+
+        <button>
+            <text>Data Scientist</text>
+            <url>https://www.computerscience.org/careers/data-science/</url>
+        </button>
+
+        <button>
+            <text>Database Administrator</text>
+            <url>https://www.computerscience.org/careers/database-administrator/</url>
+        </button>
+        
+        <button>
+            <text>Network Administrator</text>
+            <url>https://www.computerscience.org/careers/network-administrator/</url>
+        </button>
+        
+        <button>
+            <text>System Manager</text>
+            <url>https://www.computerscience.org/careers/systems-manager/</url>
+        </button>
+ 
+        <reply>
+            <text>Return to main menu</text>
+            <postback>udc</postback>
+        </reply>
+        
+        </template>
 </category>
 
 
